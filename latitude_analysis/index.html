@@ -11,19 +11,17 @@
     
 <body class="body">
 
-<container class="navigation">
-<div id="left_header">
+<container id="navigation" class="navbar fixed-top navbar-light bg-light col-lg-12 col-sm-12 absolute" >
+
 <nav class="navbar navbar-expand-lg navbar-light" id="navbar_left">
-  <a class="navbar-brand" href="index.html" id="white_text">Latitude</a>
+  <a class="navbar-brand" href="index.html" id="white_text">Home</a>
 </nav>
-</div>
     
-<div id="right_header">
 <nav class="navbar navbar-expand-lg navbar-light bg-light" >
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black; font-weight: bold">
           Plots
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="black_text">
@@ -42,32 +40,70 @@
       </li>
     </ul>
   </div>
-</nav>    
-</div>
+</nav>   
 </container>
      
 <div class="row">
-    <div class="col-lg-6 col-sm-6" id="mainbox">
-        <h1 style="color:turquoise">Summary: Latitude vs X </h1>
-			
-        <div class="col-lg-12 col-sm-12">
-            <img src="images\city_lat_vs_temp.png" width=80% height=auto>   
+    <div class="col-md-6" id="mainbox">
+        <h1>Summary: Latitude vs Weather</h1>
+		
+            <img src="images\weather.gif" width=100% height=auto>   
             
                 <div style="text-align: left">
                     The purpose of this project was to analyze worldwide weather data and to discern any correlative trends in relation to latitude.  To complete this task, data was pulled from the OpenWeatherMap API, resulting in a dataset of over 500 cities.
                     Once the data was extracted, Matplotlib was used to plot various aspects of the data against latitude.  Factors that were analyzed included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data as well as all visualizations that were created as part of the analyses.  Additionally, observations and subsquent conclusions are included to complete the project.
-
                 </div>
-        </div>
+    </div>    
+    <div id="right_box" class="col-md-5">
+            <h1>Visualization</h1>
+			
+        <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                        <a href="max_temp.html">
+						<img src="images/city_lat_vs_temp.png" alt="Max Temperature" width="100%" height="auto">
+                    </a>
+				    <div class="middle col-lg-10 col-sm-10">
+							<div class="text">Max Temperature</div>
+                    </div>
+                </div>
                 
+                <div class="col-sm">
+                        <a href="humidity.html">
+						<img src="images/city_lat_vs_humidity.png" alt="Humidity" width="100%" height="auto">
+                    </a>
+				    <div class="middle col-lg-10 col-sm-10">
+							<div class="text">Humidity</div>
+                    </div>
+                </div>
+                
+                  
+                <div class="row" id="blank_row">
+                <div class="col-sm">
+                        <a href="cloudiness.html">
+						<img src="images/city_lat_vs_cloudiness.png" alt="Cloudiness" width="100%" height="auto">
+                    </a>
+				    <div class="middle col-lg-10 col-sm-10">
+							<div class="text">Cloudiness</div>
+                    </div>
+                </div>
+                
+                <div class="col-sm">
+                        <a href="wind_speed.html">
+						<img src="images/city_lat_vs_windspeed.png" alt="Wind Speed" width="100%" height="auto">
+                    </a>
+				    <div class="middle col-lg-10 col-sm-10">
+							<div class="text">Wind Speed</div>
+                    </div>
+                </div>
+                  
+                </div>
+            </div>
+        </div>        
     </div>
-    
-    <div id="mmbox">
-    
-    </div>
-
-    
 </div>
+            
+    
     
 <div class="small_footer">
 </div>

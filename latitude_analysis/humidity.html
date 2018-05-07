@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+<title> Web Visualization (Lattitude) </title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/sticky-footer-navbar.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+    
+</head>
+    
+<body class="body">
+
+
+<container id="navigation" class="navbar fixed-top navbar-light bg-light col-lg-12 col-sm-12 absolute" >
+
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar_left">
+  <a class="navbar-brand" href="index.html" id="white_text">Home</a>
+</nav>
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black; font-weight: bold">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="black_text">
+          <a class="dropdown-item" href="max_temp.html" id="black_text">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html" id="black_text">Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html" id="black_text">Cloudiness</a>
+          <a class="dropdown-item" href="wind_speed.html" id="black_text">Wind Speed</a>
+        </div>
+      </li>
+        
+      <li class="nav-item active">
+        <a class="nav-link" href="comparisons.html" id="black_text">Comparison <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data.html" id="black_text">Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>   
+</container>
+     
+<div class="row">
+    <div class="col-md-6" id="mainbox">
+        <h1>Latitude vs Humidity</h1>
+		    <a href="images/city_lat_vs_humidity.png" target="_blank">
+            <img src="images/city_lat_vs_humidity.png" width=80% height=auto>   
+            </a>
+                <div style="text-align: left">
+                    The percent humidity for each city was recorded and was then graphed with consideration to the city's latitude. Results are found in the scatter plot above.
+                    <br>
+                    Cities found between latitudes between 40-60, have a majority of the cities sampled with humidities between 80 and 100 percent.
+                </div>
+    </div>    
+    <div id="right_box" class="col-md-5">
+            <h1>Visualization</h1>
+			
+        <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                        <a href="max_temp.html">
+						<img src="images/city_lat_vs_temp.png" alt="Max Temperature" width="100%" height="auto">
+                    </a>
+				    <div class="middle col-lg-10 col-sm-10">
+							<div class="text">Max Temperature</div>
+                    </div>
+                </div>
+                
+                <div class="col-sm">
+                        <a href="humidity.html">
+						<img src="images/city_lat_vs_humidity.png" alt="Humidity" width="100%" height="auto">
+                    </a>
+				    <div class="middle col-lg-10 col-sm-10">
+							<div class="text">Humidity</div>
+                    </div>
+                </div>
+                
+                  
+                <div class="row" id="blank_row">
+                    <div class="col-sm">
+                            <a href="cloudiness.html">
+                            <img src="images/city_lat_vs_cloudiness.png" alt="Cloudiness" width="100%" height="auto">
+                        </a>
+                        <div class="middle col-lg-10 col-sm-10">
+                                <div class="text">Cloudiness</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                            <a href="wind_speed.html">
+                            <img src="images/city_lat_vs_windspeed.png" alt="Wind Speed" width="100%" height="auto">
+                        </a>
+                        <div class="middle col-lg-10 col-sm-10">
+                                <div class="text">Wind Speed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+            
+    
+    
+<div class="small_footer">
+</div>
+<footer class="footer">
+      <div class="container">
+        <span> &copy; Copyright Coding Bootcamp 2018</span>
+      </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+</body>
+</html>
