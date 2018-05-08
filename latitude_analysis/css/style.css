@@ -27,7 +27,7 @@
   }
 
 
-#navbar_left{
+.navbar_left{
     background-color:turquoise;
     font-weight: bold;
     padding-left: 20px;
@@ -48,7 +48,7 @@
 	display:inline-block;
 	margin-left: 50px;
 	margin-bottom: 40px;
-	margin-top:100px;
+	margin-top:50px;
 	padding:20px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -66,7 +66,7 @@ display:inline-block;}
 	display:inline-block;
 	margin-left: 50px;
 	margin-bottom: 40px;
-	margin-top:100px;
+	margin-top:50px;
 	padding:20px;
 	padding-left: 50px;
 	padding-right: 50px;
