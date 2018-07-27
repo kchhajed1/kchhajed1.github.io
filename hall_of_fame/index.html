@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Hall of Fame Prediction</title>
+<title>Hall_of_Fame_Prediction slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11943,7 +11943,7 @@ a.anchor-link {
 </li>
 </ul>
 <h2 id="Procedure:">Procedure:<a class="anchor-link" href="#Procedure:">&#182;</a></h2><ul>
-<li>Create feathres with relevant data (AVE Battig Average/OBP - On Base Percent/SP - Slug Percent, OPS -On Base plus Slugging      Percent, Awards Won, Years Played etc)</li>
+<li>Create features with relevant data (AVE Battig Average/OBP - On Base Percent/SP - Slug Percent, OPS -On Base plus Slugging      Percent, Awards Won, Years Played etc)</li>
 <li>Analyze metrics for statistical significance between the HoF winners and Non-HoF winners.</li>
 <li>Use ML, determine the best model for data set.</li>
 <li>Settle on a model (Random Forest Classifier). Predict which batters will be voted into the Hall of Fame.</li>
@@ -12005,49 +12005,6 @@ a.anchor-link {
 
 <div class="output_html rendered_html output_subarea ">
 <div id="1b4b3e18-ecee-4035-9eb4-8e26cca51b78" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("1b4b3e18-ecee-4035-9eb4-8e26cca51b78", [{"x": [23.0, 19.0, 18.0, 20.0, 15.0, 19.0, 18.0, 15.0, 21.0, 20.0, 19.0, 24.0, 25.0, 20.0, 21.0, 13.0, 21.0, 19.0, 19.0, 13.0, 23.0, 20.0, 17.0, 29.0, 24.0, 21.0, 22.0, 20.0, 22.0, 11.0, 22.0, 19.0, 18.0, 23.0, 18.0, 23.0, 23.0, 20.0, 21.0, 22.0, 23.0, 22.0, 22.0, 23.0, 12.0, 24.0, 16.0, 21.0, 23.0, 22.0, 10.0, 22.0, 16.0, 18.0, 21.0, 16.0, 19.0, 18.0, 22.0, 21.0, 14.0, 20.0, 17.0, 21.0, 22.0, 18.0, 19.0, 23.0, 23.0, 20.0], "type": "histogram", "uid": "d5da4936-9117-11e8-8aaf-780cb8613cd9"}], {"title": "Distribution of Years Played", "yaxis": {"title": "HoF Careers", "zeroline": false}}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[118]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Histogram</span><span class="p">(</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">df_hof</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span>
-    <span class="p">)</span>
-
-<span class="n">layout</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Distribution of Home Runs&#39;</span><span class="p">,</span>
-              <span class="n">yaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">zeroline</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span><span class="n">title</span><span class="o">=</span> <span class="s1">&#39;HoF Careers&#39;</span><span class="p">)</span>
-             <span class="p">)</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">trace</span><span class="p">]</span>
-<span class="c1">#Distribution of Home Runs</span>
-<span class="n">fig1</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
-<span class="n">py</span><span class="o">.</span><span class="n">offline</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig1</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<div id="128dde03-d9df-4569-89b4-439aa92bdd4c" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("128dde03-d9df-4569-89b4-439aa92bdd4c", [{"x": [755.0, 210.0, 83.0, 45.0, 449.0, 512.0, 118.0, 68.0, 317.0, 149.0, 92.0, 117.0, 47.0, 170.0, 438.0, 361.0, 534.0, 105.0, 184.0, 331.0, 630.0, 135.0, 183.0, 297.0, 301.0, 563.0, 399.0, 33.0, 573.0, 369.0, 83.0, 198.0, 536.0, 28.0, 512.0, 660.0, 521.0, 205.0, 234.0, 268.0, 504.0, 475.0, 511.0, 379.0, 207.0, 170.0, 382.0, 431.0, 268.0, 586.0, 137.0, 714.0, 282.0, 548.0, 307.0, 102.0, 28.0, 407.0, 117.0, 475.0, 154.0, 521.0, 58.0, 101.0, 113.0, 426.0, 521.0, 465.0, 452.0, 251.0], "type": "histogram", "uid": "d7ea2480-9117-11e8-b75e-780cb8613cd9"}], {"title": "Distribution of Home Runs", "yaxis": {"title": "HoF Careers", "zeroline": false}}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
 </div>
 
 </div>
