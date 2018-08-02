@@ -21,37 +21,76 @@
   <body class="bg">
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="padding: 0px; margin: 0px;">
-      <header class="projecthead">
+        <header class="projecthead">
         <div class="inner">
           <h3 class="masthead-brand"></h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link active" href="project.html">Projects</a>
-            <a class="nav-link" href="resume.pdf">Resume</a>
+            <a class="nav-link" href="static/resume.pdf" target="_blank">Resume</a>
             <a class="nav-link " href="contact.html">Contact</a>
           </nav>
         </div>
       </header>
         
-    <div class="row">
-    <div class="col-md-12" id="mainbox">
-        <h1>Summary: Latitude vs Weather</h1>
-		
-            <img src="images/south_carolina.PNG" width=100% height=auto>   
-            
-                <div style="text-align: left">
-                    The purpose of this project was to analyze worldwide weather data and to discern any correlative trends in relation to latitude.  To complete this task, data was pulled from the OpenWeatherMap API, resulting in a dataset of over 500 cities.
-                    Once the data was extracted, Matplotlib was used to plot various aspects of the data against latitude.  Factors that were analyzed included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data as well as all visualizations that were created as part of the analyses.  Additionally, observations and subsquent conclusions are included to complete the project.
-                </div>
-    </div>
-    </div>
-      <footer class="mastfoot mt-auto text-center ">
+
+        <br>
+      <main role="main" class="inner cover">
+
+        <div class="row" style="text-align: left">
+            <br><br><br>
+
+            <h2 >UC Berkeley Bootcamp Projects</h2>
+            <br>
+            <ul class="projects" style="padding: 0px">
+                <li>
+                    <h5><a href="https://kchhajed1.github.io/south_carolina_real_estate/index.html" target="_blank" style="color: antiquewhite">
+                    Real Estate Analysis in South Carolina</a><br></h5>
+                    The project involved determining the real estate investment criteria in South Carolina depending on the Job Growth, School Rating, Crime Rate and Property Value to Rent for zip codes in South Carolina.
+                    <br><br>
+                    <b>Technologies: </b> Python, Pandas, APIs to Retrieve Data using Requests Module, Web scraping BeautifulSoup module, Folium, Contour Maps, MatplotLib
+                    <br><br>
+                    <b><a href="https://github.com/kchhajed1/south_carolina_real_estate" target="_blank" >Code Repo</a></b>
+                    <br>
+                </li>
+                
+                <li>
+                    <h5><a href="static/job_search.pdf" target="_blank" style="color: antiquewhite">
+                    Job Search</a><br></h5>
+                    The project involved finding a data job close to home, kids and spouse. Currently too many job sites, too many duplicate listing, phishing listings.
+                    Commute times can vary widely depending in direction and time of day. Miles is a poor indicator of commute time.
+
+                    <br><br>
+                    <b>Technologies: </b> Python, Pandas, APIs to Retrieve Data using Requests Module, Web scraping, PyMongo, FLask, Plotly, HTML, CSS
+                    <br><br>
+                    <b><a href="https://github.com/kchhajed1/job_search" target="_blank" >Code Repo</a></b>
+                    <br>
+                </li>
+                
+
+                <li>
+                    <h5><a href="https://knishina.github.io/Final_Project/" target="_blank" style="color: antiquewhite">
+                    Predictions in Major League Baseball</a><br></h5>
+                    The project involved Predictions in Major League Baseball for Hall of Fame, Most Valuable Player (MVP) and the 2018 World Series Winner
+                    <br><br>
+                    <b>Technologies: </b> Python, Pandas, Numpy, Plotly, Scikit-learn, Machine Learning Model: Random Forest and Logistic Regression
+                    <br><br>
+                    <b><a href="https://github.com/kchhajed1/baseball_predictions" target="_blank" >Code Repo</a></b>
+                    <br>
+                </li>
+
+
+
+            </ul>                                
+        </div>
+        </main>
+        <footer class="mastfoot mt-auto text-center ">
         <div class="inner">
           <h5 style="color: white"> <a href="https://www.linkedin.com/in/kishor-chhajed/" target="_blank"> Linkedin</a> | <a href="https://github.com/kchhajed1" target="_blank"> GitHub</a></h5>
-          <p style="color: black">Please use a laptop to see the website in better resolution/alignment. </p>    
+          <p style="color: black">Website best view on laptop </p>    
         </div>
       </footer>
-
+      </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

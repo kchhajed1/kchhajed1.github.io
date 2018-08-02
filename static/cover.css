@@ -24,11 +24,19 @@ a:hover {
  * Base structure
  */
 
-html,
+html
+{
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+}
+
 body {
     position: relative;
     width: 100%;
-    background: #161415 url(../images/2.jpg) no-repeat top center;
+    background: #ccc url(../images/2.jpg) no-repeat top center;
     background-size: cover;
     text-align: center;
     height: 100%;
@@ -38,10 +46,10 @@ body {
 .bg {
     position: relative;
     width: 100%;
-    background: #161415 url(../images/3.jpg) no-repeat top center;
-    background-size: cover;
+    background: #161415 ;
     text-align: center;
     height: 100%;
+    background-size: cover
 }
 
 body {
@@ -124,12 +132,11 @@ body {
 }
 
 .projects li{
-    list-style-type: none;
     display: inline-block;
     margin-right: 5px;
-    margin-bottom: 15px;
-    width: 290px;
-
+    margin-bottom: 30px;
+    width: 100%;
+    color: aliceblue;
 }
 
 
