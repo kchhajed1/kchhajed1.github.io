@@ -26,19 +26,22 @@ a:hover {
 
 html,
 body {
-  height: 100%;
-    background-repeat: no-repeat;
-    background-color: #cccccc;
-    background-image: url(../images/2.jpg);
-    background-size: cover
+    position: relative;
+    width: 100%;
+    background: #161415 url(../images/2.jpg) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
 }
 
+
 .bg {
-  height: 100%;
-    background-repeat: no-repeat;
-    background-color: #cccccc;
-    background-image: url(../images/3.jpg);
-    background-size: cover
+    position: relative;
+    width: 100%;
+    background: #161415 url(../images/3.jpg) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
 }
 
 body {
